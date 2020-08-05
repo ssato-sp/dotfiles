@@ -8,6 +8,7 @@ dotfiles_root=${dotfiles_bin_root%/.bin}
 ## uninstall zsh
 
 sudo apt remove -y zsh
+chsh -s $(which bash)
 unlink ~/.zshrc
 
 ## uninstall peco
