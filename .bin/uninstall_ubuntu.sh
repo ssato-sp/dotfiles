@@ -1,0 +1,39 @@
+#!/bin/bash
+
+# Path (Where dotfiles is copied)    
+    
+dotfiles_bin_root=$(cd $(dirname $0); pwd)
+dotfiles_root=${dotfiles_bin_root%/.bin}
+
+## uninstall zsh
+
+sudo apt remove -y zsh
+unlink ~/.zshrc
+
+## uninstall peco
+
+sudo apt remove -y peco
+
+## uninstall tmux
+
+sudo apt remove -y tmux
+unlikn ~/.tmux.conf
+
+## unisntall pyenv
+
+sudo apt remove -y build-essential
+sudo apt remove -y libffi-dev    
+sudo apt remove -y libssl-dev    
+sudo apt remove -y zlib1g-dev    
+sudo apt remove -y liblzma-dev    
+sudo apt remove -y libbz2-dev libreadline-dev libsqlite3-dev
+
+sudo rm -rf "${dotfiles_root}/.python_venv/.pyenv"
+
+## uninstall neovim
+
+sudo apt remove -y neovim
+
+## uninstall remaining file
+
+sudo apt autoremove -y
