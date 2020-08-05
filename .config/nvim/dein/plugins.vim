@@ -26,7 +26,7 @@ let s:lazy_toml = s:toml_dir . '/dein_lazy.toml'
 let s:python_toml = s:toml_dir . '/dein_python.toml' 
  
 call dein#load_toml(s:toml,      {'lazy': 0}) 
-call dein#load_toml(s:python_toml, {'lazy': 1}) 
+call dein#load_toml(s:python_toml, {'lazy': 0}) 
 call dein#load_toml(s:lazy_toml, {'lazy': 1}) 
  
 call dein#end() 
