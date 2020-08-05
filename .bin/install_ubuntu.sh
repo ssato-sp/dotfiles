@@ -48,10 +48,11 @@ if [ ! -e ${pyenv_root} ]; then
     
     git clone https://github.com/pyenv/pyenv.git ${pyenv_root}
     git clone https://github.com/pyenv/pyenv-virtualenv.git ${pyenv_root}/plugins/pyenv-virtualenv
-    git clone git://github.com/yyuu/pyenv-update.git ${pyenv_root}/plugins/pyenv-update
+    git clone https://github.com/pyenv/pyenv-update.git ${pyenv_root}/plugins/pyenv-update
+
     eval "(${pyenv_root}/bin/pyenv init -)"
-    eval "(${pyenv_root}/bin/pyenv virtualenv-init -)"
     eval "(${pyenv_root}/bin/pyenv install 3.8.2)"
+    eval "(${pyenv_root}/bin/pyenv virtualenv-init -)"
     eval "(${pyenv_root}/bin/pyenv virtualenv 3.8.2 python3_neovim)"
     eval "(${pyenv_root}/bin/pyenv global python3_neovim)"
     eval "(${pyenv_root}/versions/python3_neovim/bin/pip install --upgrade pip)"
@@ -67,6 +68,7 @@ sudo apt install -y neovim
 ## apt upgrade
 
 sudo apt upgrade -y
+sudo apt autoremove -y
 
 # auto rewrite envorinment variable (rmeove comment out (#) if you use)
 
@@ -81,3 +83,5 @@ sudo apt upgrade -y
 echo "Please check DOTFILES_ROOT at .zshrc and g:python3_host_prog at .config/nvim/init.vim"
 echo "DOTFILES=${dotfiles_root}"
 echo "g:python3_host_prog=${pyenv_root}/versions/python3_neovim/bin/python"
+
+zsh
