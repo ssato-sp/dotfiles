@@ -8,6 +8,11 @@
 
 !/.bin/**
 !/.config/**
+!/.cache/
+!/.data/
+!/LICENSE
+!/.python_venv/
+!/.tmux.conf
 !/.zshrc
 
 !/README.md
