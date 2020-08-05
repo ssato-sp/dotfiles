@@ -1,22 +1,18 @@
-# Created by newuser for 5.4.2
+export DOTFILES_ROOT="$HOME/dotfiles"
+export PYENV_ROOT="$DOTFILES_ROOT/.python_venv/.pyenv"
+export XDG_CONFIG_HOME="$DOTFILES_ROOT/.config"
+export XDG_CACHE_HOME="$DOTFILES_ROOT/.cache"                   
+export XDG_DATA_HOME="$DOTFILES_ROOT/.data"
 
-# XDG
-export XDG_CONFIG_HOME="$HOME/.config"
-export XDG_CACHE_HOME="$HOME/.cache"
-export XDG_DATA_HOME="$HOME/.local/share"
-
-# ヒストリーに重複を表示しない
 setopt histignorealldups
 
 HISTFILE=~/.zsh_history
 HISTSIZE=10000
 SAVEHIST=10000
 
-# 色を使用
 autoload -Uz colors
 colors
 
-# 補完, change color with file, dir, etc...   
 autoload -Uz compinit
 compinit
 
@@ -28,7 +24,6 @@ alias gls="gls --color"
 
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
 
-# cdコマンドを省略して、ディレクトリ名のみの入力で移動
 setopt auto_cd
 
 
@@ -39,16 +34,8 @@ PROMPT="%{${fg[green]}%}[%n@%m]%{${reset_color}%} %~
 # alias
 
 alias relogin='exec $SHELL -l'
-alias python3=python3.7
+alias python3=python3.8
 alias vim=nvim
-
-# pyenv
-export PYENV_ROOT="$HOME/.pyenv"
-export PATH="$PYENV_ROOT/bin:$PATH"
-if command -v pyenv 1>/dev/null 2>&1; then
-  eval "$(pyenv init -)"
-fi
-eval "$(pyenv virtualenv-init -)"
 
 # peco
 function peco-select-history() {
@@ -59,3 +46,9 @@ function peco-select-history() {
 zle -N peco-select-history
 bindkey '^r' peco-select-history
 
+# pyenv
+export PATH="$PYENV_ROOT/bin:$PATH"
+if command -v pyenv 1>/dev/null 2>&1; then
+    eval "$(pyenv init -)"
+fi
+eval "$(pyenv virtualenv-init -)"
