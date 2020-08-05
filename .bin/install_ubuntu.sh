@@ -56,6 +56,7 @@ if [ ! -e ${pyenv_root} ]; then
     eval "(${pyenv_root}/bin/pyenv global python3_neovim)"
     eval "(${pyenv_root}/versions/python3_neovim/bin/pip install --upgrade pip)"
     eval "(${pyenv_root}/versions/python3_neovim/bin/pip install pynvim)"
+    eval "(${pyenv_root}/versions/python3_neovim/bin/pip install flake8)"
     eval "(${pyenv_root}/bin/pyenv global 3.8.2)"
 fi
 
