@@ -9,7 +9,7 @@ DOTFILES=/home/ssato/dotfiles
 
 ## required
 
-git
+- git
 
 ## install
 
