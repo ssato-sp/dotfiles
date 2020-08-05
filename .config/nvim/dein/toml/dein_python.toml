@@ -1,0 +1,7 @@
+[[plugins]]    
+repo = 'nvie/vim-flake8'    
+hook_add = '''    
+    let g:flake8_quickfix_height=10    
+    let g:flake8_show_in_gutter=1    
+    autocmd FileType python nnoremap <buffer> <Leader>c :call flake8#Flake8()<CR><C-w>k    
+'''
