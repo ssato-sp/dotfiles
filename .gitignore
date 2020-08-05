@@ -1,0 +1,14 @@
+# all file ignore
+
+*
+!*/
+
+
+# not ignore
+
+!/.bin/**
+!/.config/**
+!/.zshrc
+
+!/README.md
+!/.gitignore
