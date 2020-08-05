@@ -1,6 +1,6 @@
 # dotfiles
 
-# NOTE
+## NOTE
 
 - Please REWRITE DOTFILES\_ROOT at .zshrc and g:python3\_host\_prog at .config/nvim/init.vim
 DOTFILES=/home/ssato/dotfiles
