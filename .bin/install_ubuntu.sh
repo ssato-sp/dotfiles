@@ -1,12 +1,6 @@
 #!/bin/bash 
 
-# Path (Where dotfiles is copied)
-
-# if [ $# -ne 1 ]; then
-#   echo "ERROR     : The number of arguments is not 1." 1>&2
-#   echo "HOW TO USE: .install.sh <PATH/TO/WHERE/YOU/CLONE/DOTFILES>" 1>&2
-#   exit 1
-# fi
+# PATH where dotfiles is cloned
 
 dotfiles_bin_root=$(cd $(dirname $0); pwd)
 dotfiles_root=${dotfiles_bin_root%/.bin}
@@ -45,20 +39,20 @@ if [ ! -e ${pyenv_root} ]; then
     sudo apt install -y zlib1g-dev
     sudo apt install -y liblzma-dev
     sudo apt install -y libbz2-dev libreadline-dev libsqlite3-dev
-    
+
     git clone https://github.com/pyenv/pyenv.git ${pyenv_root}
     git clone https://github.com/pyenv/pyenv-virtualenv.git ${pyenv_root}/plugins/pyenv-virtualenv
     git clone https://github.com/pyenv/pyenv-update.git ${pyenv_root}/plugins/pyenv-update
-
-    eval "(${pyenv_root}/bin/pyenv init -)"
-    eval "(${pyenv_root}/bin/pyenv install 3.8.2)"
-    eval "(${pyenv_root}/bin/pyenv virtualenv-init -)"
-    eval "(${pyenv_root}/bin/pyenv virtualenv 3.8.2 python3_neovim)"
-    eval "(${pyenv_root}/bin/pyenv global python3_neovim)"
-    eval "(${pyenv_root}/versions/python3_neovim/bin/pip install --upgrade pip)"
-    eval "(${pyenv_root}/versions/python3_neovim/bin/pip install pynvim)"
-    eval "(${pyenv_root}/versions/python3_neovim/bin/pip install flake8)"
-    eval "(${pyenv_root}/bin/pyenv global 3.8.2)"
+    
+    eval "$(${pyenv_root}/bin/pyenv init -)"
+    eval "$(${pyenv_root}/bin/pyenv install 3.8.2)"
+    eval "$(${pyenv_root}/bin/pyenv virtualenv-init -)"
+    eval "$(${pyenv_root}/bin/pyenv virtualenv 3.8.2 python3_neovim)"
+    eval "$(${pyenv_root}/bin/pyenv global python3_neovim)"
+    eval "$(${pyenv_root}/versions/python3_neovim/bin/pip install --upgrade pip)"
+    eval "$(${pyenv_root}/versions/python3_neovim/bin/pip install pynvim)"
+    eval "$(${pyenv_root}/versions/python3_neovim/bin/pip install flake8)"
+    eval "$(${pyenv_root}/bin/pyenv global 3.8.2)"
 fi
 
 ## neovim
