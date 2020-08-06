@@ -4,14 +4,16 @@
 
 # not ignore
 
-!/.bin/**
-!/.config/**
-!/.cache/
-!/.data/
-!/LICENSE
-!/.python_venv/
-!/.tmux.conf
-!/.zshrc
+!.bin/
+!.bin/**
+!.config/
+!.config/**
+!.cache/
+!.data/
+!LICENSE
+!.python_venv/
+!.tmux.conf
+!.zshrc
 
-!/README.md
-!/.gitignore
+!README.md
+!.gitignore
