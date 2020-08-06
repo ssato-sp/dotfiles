@@ -22,6 +22,10 @@ DOTFILES=/home/ssato/dotfiles
 
 `~/this_dotfiles/.bin/install_*.sh`
 
+then
+
+`~/this_dotfiles/.bin/make_pyenv_neovim_ubuntu.sh`
+
 ## uninstall
 
 `~/this_dotfiles/.bin/uninstall_*.sh`
