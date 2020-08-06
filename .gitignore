@@ -4,8 +4,8 @@
 
 # not ignore
 
-!**/.bin/**
-!**/.config/**
+!/.bin/**
+!/.config/**
 !/.cache/
 !/.data/
 !/LICENSE
