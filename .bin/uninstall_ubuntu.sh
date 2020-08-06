@@ -17,7 +17,7 @@ sudo apt remove -y peco
 ## uninstall tmux
 
 sudo apt remove -y tmux
-unlikn ~/.tmux.conf
+unlink ~/.tmux.conf
 
 ## unisntall pyenv
 
