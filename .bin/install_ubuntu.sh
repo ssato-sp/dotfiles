@@ -43,16 +43,6 @@ if [ ! -e ${pyenv_root} ]; then
     git clone https://github.com/pyenv/pyenv.git ${pyenv_root}
     git clone https://github.com/pyenv/pyenv-virtualenv.git ${pyenv_root}/plugins/pyenv-virtualenv
     git clone https://github.com/pyenv/pyenv-update.git ${pyenv_root}/plugins/pyenv-update
-    
-    eval "$(${pyenv_root}/bin/pyenv init -)"
-    eval "$(${pyenv_root}/bin/pyenv install 3.8.2)"
-    eval "$(${pyenv_root}/bin/pyenv virtualenv-init -)"
-    eval "$(${pyenv_root}/bin/pyenv virtualenv 3.8.2 python3_neovim)"
-    eval "$(${pyenv_root}/bin/pyenv global python3_neovim)"
-    eval "$(${pyenv_root}/versions/python3_neovim/bin/pip install --upgrade pip)"
-    eval "$(${pyenv_root}/versions/python3_neovim/bin/pip install pynvim)"
-    eval "$(${pyenv_root}/versions/python3_neovim/bin/pip install flake8)"
-    eval "$(${pyenv_root}/bin/pyenv global 3.8.2)"
 fi
 
 ## neovim
