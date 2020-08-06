@@ -7,7 +7,6 @@ dotfiles_root=${dotfiles_bin_root%/.bin}
 
 ## uninstall zsh
 
-sudo apt remove -y zsh
 chsh -s $(which bash)
 unlink ~/.zshrc
 
@@ -38,3 +37,6 @@ sudo apt remove -y neovim
 ## uninstall remaining file
 
 sudo apt autoremove -y
+
+echo "Please uninstall zsh yourself"
+echo ">sudo apt remove zsh"
