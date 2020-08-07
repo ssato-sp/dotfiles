@@ -16,6 +16,8 @@ colors
 autoload -Uz compinit
 compinit
 
+autoload -Uz vcs_info
+
 export LSCOLORS=exfxcxdxbxegedabagacad
 export LS_COLORS='di=36:ln=35:so=32:pi=33:ex=31:bd=46;34:cd=43;34:su=41;30:sg=46;30:tw=42;30:ow=43;30'
 
@@ -30,6 +32,14 @@ setopt auto_cd
 # prompt
 PROMPT="%{${fg[green]}%}[%n@%m]%{${reset_color}%} %~
 %# "
+
+zstyle ':vcs_info:*' formats '(%s)[%F{green}%b%f]'
+zstyle ':vcs_info:*' actionformats '(%s)[%F{green}%b%f(%F{red}%a%f)]'
+
+setopt prompt_subst
+precmd() { vcs_info }
+
+RPROMPT='${vcs_info_msg_0_}'
 
 # alias
 
