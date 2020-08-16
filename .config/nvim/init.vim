@@ -24,8 +24,13 @@ set hidden
 " 入力中のコマンドをステータスに表示する    
 set showcmd
 " color schema    
-set background=dark    
 colorscheme hybrid    
+
+highlight Normal ctermbg=NONE guibg=NONE
+highlight NonText ctermbg=NONE guibg=NONE
+highlight LineNr ctermbg=NONE guibg=NONE
+highlight Folded ctermbg=NONE guibg=NONE
+highlight EndOfBuffer ctermbg=NONE guibg=NONE
 
 " 見た目系
 " 行番号を表示    

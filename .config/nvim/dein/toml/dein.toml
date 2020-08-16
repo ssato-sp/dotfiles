@@ -33,11 +33,17 @@ hook_add = '''
 [[plugins]]
 repo = 'itchyny/lightline.vim' 
 hook_add = ''' 
-    let g:lightline = {'colorscheme': 'seoul256'}
+    let g:lightline = {'colorscheme': 'jellybeans'}
 '''
 
 [[plugins]]
 repo = 'w0ng/vim-hybrid'
+
+[[plugins]]
+repo = 'miyakogi/seiya.vim'
+hook_add = '''
+    let g:seiya_auto_enable=1
+'''
 
 [[plugins]]
 repo = 'cespare/vim-toml'
