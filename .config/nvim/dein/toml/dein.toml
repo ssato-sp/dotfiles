@@ -21,7 +21,7 @@ hook_add = '''
  
     " 実行時に前回の表示内容をクローズ&保存してから実行 
     let g:quickrun_no_default_key_mappings = 1 
-    nnoremap <Leader>r :cclose<CR>:write<CR>:QuickRun -mode n<CR> 
+    nnoremap <Leader>q :cclose<CR>:write<CR>:QuickRun -mode n<CR>
     nnoremap <Leader>, :cclose<CR>:write<CR>:QuickRun -input input.txt<CR> 
 ''' 
  
