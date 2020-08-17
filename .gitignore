@@ -7,7 +7,7 @@
 !.bin/
 !.bin/**
 !.config/
-!.config/nvim
+!.config/nvim/**
 !.cache/
 !.data/
 !LICENSE
