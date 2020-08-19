@@ -34,6 +34,10 @@ sudo rm -rf "${dotfiles_root}/.python/.pyenv"
 
 sudo apt remove -y neovim
 
+## uninstall rbenv
+
+sudo rm -rf "${dotfiles_root}/.ruby/.rbenv"
+
 ## uninstall remaining file
 
 sudo apt autoremove -y

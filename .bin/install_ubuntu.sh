@@ -49,6 +49,15 @@ fi
 
 sudo apt install -y neovim
 
+## rbenv
+
+export rbenv_root="${dotfiles_root}/.ruby/.rbenv"
+
+if [ ! -e ${rbenv_root} ]; then
+    git clone https://github.com/rbenv/rbenv.git ${rbenv_root}
+    git clone https://github.com/rbenv/ruby-build.git ${rbenv_root}/plugins/ruby-build
+fi
+
 ## apt upgrade
 
 sudo apt upgrade -y

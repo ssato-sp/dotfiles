@@ -1,5 +1,6 @@
 export DOTFILES_ROOT="$HOME/dotfiles"
 export PYENV_ROOT="$DOTFILES_ROOT/.python/.pyenv"
+export RBENV_ROOT="$DOTFILES_ROOT/.ruby/.rbenv"
 export XDG_CONFIG_HOME="$DOTFILES_ROOT/.config"
 export XDG_CACHE_HOME="$DOTFILES_ROOT/.cache"                   
 export XDG_DATA_HOME="$DOTFILES_ROOT/.data"
@@ -62,3 +63,7 @@ if command -v pyenv 1>/dev/null 2>&1; then
     eval "$(pyenv init -)"
 fi
 eval "$(pyenv virtualenv-init -)"
+
+# rbenv
+export PATH="$RBENV_ROOT/bin:$PATH"
+eval "$(rbenv init -)"
