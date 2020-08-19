@@ -12,6 +12,7 @@
 !.data/
 !LICENSE
 !.python_venv/
+!.ruby_venv/
 !.tmux.conf
 !.zshrc
 
