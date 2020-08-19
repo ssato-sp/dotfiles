@@ -28,7 +28,7 @@ sudo apt remove -y zlib1g-dev
 sudo apt remove -y liblzma-dev    
 sudo apt remove -y libbz2-dev libreadline-dev libsqlite3-dev
 
-sudo rm -rf "${dotfiles_root}/.python_venv/.pyenv"
+sudo rm -rf "${dotfiles_root}/.python/.pyenv"
 
 ## uninstall neovim
 

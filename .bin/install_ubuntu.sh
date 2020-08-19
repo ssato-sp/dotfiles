@@ -30,7 +30,7 @@ ln -s ~/dotfiles/.tmux.conf ~/.tmux.conf
 
 ## python pyenv virtualenv (for neovim)
 
-export pyenv_root="${dotfiles_root}/.python_venv/.pyenv"
+export pyenv_root="${dotfiles_root}/.python/.pyenv"
 
 if [ ! -e ${pyenv_root} ]; then
     sudo apt install -y build-essential
