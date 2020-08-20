@@ -3,7 +3,6 @@
 ## NOTE
 
 - Please REWRITE DOTFILES\_ROOT at .zshrc and g:python3\_host\_prog at .config/nvim/init.vim
-DOTFILES=/home/ssato/dotfiles
   - Change according to the directory where dotfiles is cloned
   - Default is ~ ($HOME)
 
@@ -16,15 +15,21 @@ DOTFILES=/home/ssato/dotfiles
 - zsh
   - peco
 - tmux
-- neovim
-  - pyenv
+- pyenv
   - pyenv-virtualenv
+  - pyenv-update
+- neovim
+- rbenv
 
 `~/this_dotfiles/.bin/install_*.sh`
 
 then
 
 `~/this_dotfiles/.bin/make_pyenv_neovim_ubuntu.sh`
+
+then
+
+`~/this_dotfiles/.bin/make_rbenv_ubuntu.sh`
 
 ## uninstall
 
