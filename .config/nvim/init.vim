@@ -1,5 +1,5 @@
 
-let g:python3_host_prog = expand('$HOME/dotfiles/.python_venv/.pyenv/versions/python3_neovim/bin/python')
+let g:python3_host_prog = expand('$HOME/dotfiles/.python/.pyenv/versions/python3_neovim/bin/python')
 let $CONFIG = $XDG_CONFIG_HOME
 let $CACHE  = $XDG_CACHE_HOME
 let $DATA   = $XDG_DATA_HOME
