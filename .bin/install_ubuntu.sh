@@ -8,6 +8,11 @@ dotfiles_root=${dotfiles_bin_root%/.bin}
 ## apt update
 
 sudo apt update -y
+sudo apt upgrade -y
+
+## install required things
+
+sudo apt install -y clang
 
 ## install zsh
 
@@ -58,9 +63,8 @@ if [ ! -e ${rbenv_root} ]; then
     git clone https://github.com/rbenv/ruby-build.git ${rbenv_root}/plugins/ruby-build
 fi
 
-## apt upgrade
+## apt autoremove
 
-sudo apt upgrade -y
 sudo apt autoremove -y
 
 # auto rewrite envorinment variable (rmeove comment out (#) if you use)
