@@ -38,6 +38,10 @@ sudo apt remove -y neovim
 
 sudo rm -rf "${dotfiles_root}/.ruby/.rbenv"
 
+## uninstall required things
+
+sudo apt remove -y clang
+
 ## uninstall remaining file
 
 sudo apt autoremove -y
