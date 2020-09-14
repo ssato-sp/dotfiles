@@ -9,7 +9,7 @@ hook_add = '''
         \ }
     
     let g:ale_fixers = {
-        \ 'python': ['autopep8', 'black', 'isort'],
+        \ 'python': ['autopep8', 'black', 'isort', 'trim_whitespace'],
         \ 'cpp': ['clang-format', 'trim_whitespace']
         \ }
     
