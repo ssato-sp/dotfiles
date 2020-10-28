@@ -75,7 +75,7 @@ set wrapscan
 " 検索語をハイライト表示
 set hlsearch
 
-set ttimeoutlen=10
+set timeout timeoutlen=10 ttimeoutlen=10
 
 " ESC連打でハイライト解除
 noremap <Esc><Esc> :noh<CR>
