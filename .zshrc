@@ -47,6 +47,7 @@ RPROMPT='${vcs_info_msg_0_}'
 alias relogin='exec $SHELL -l'
 alias python3=python3.8
 alias vim=nvim
+alias cl=clear
 
 # peco
 function peco-select-history() {
