@@ -32,7 +32,7 @@ hook_add = '''
 [[plugins]] 
 repo =  'preservim/nerdtree' 
 hook_add = ''' 
-    nnoremap <C-n> :NERDTreeToggle<CR> 
+    nnoremap <Leader>n :NERDTreeToggle<CR> 
 '''
 [[plugins]]
 repo = 'itchyny/lightline.vim' 
