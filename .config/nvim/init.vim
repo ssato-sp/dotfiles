@@ -17,6 +17,7 @@ endfunction
 call s:load('plugins')
 
 " setting
+set viminfo=
 "文字コードをUFT-8に設定    
 set fenc=utf-8
 " 編集中のファイルが変更されたら自動で読み直す    
