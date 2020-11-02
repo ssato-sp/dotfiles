@@ -4,6 +4,8 @@ let $CONFIG = $XDG_CONFIG_HOME
 let $CACHE  = $XDG_CACHE_HOME
 let $DATA   = $XDG_DATA_HOME
 
+let mapleader = "\<Space>"
+
 " Load File
 function! s:load(file) abort
   let s:path = expand('$CONFIG/nvim/dein/' . a:file . '.vim')    
@@ -75,7 +77,7 @@ set wrapscan
 " 検索語をハイライト表示
 set hlsearch
 
-set timeout timeoutlen=10 ttimeoutlen=10
+set timeout timeoutlen=3000 ttimeoutlen=100
 
 " ESC連打でハイライト解除
 noremap <Esc><Esc> :noh<CR>
