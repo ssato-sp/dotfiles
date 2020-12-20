@@ -2,9 +2,10 @@
 repo     = 'Shougo/deoplete.nvim'
 on_ft    = ['c', 'cpp']
 hook_add = '''
-    let g:deoplete#enable_at_startup = 1
     set shortmess+=c
 
+    nnoremap <Leader>1 :call deoplete#enable() <CR>
+    nnoremap <Leader>2 :call deoplete#disable() <CR>
     inoremap <silent><expr> <TAB>
           \ pumvisible() ? "\<C-n>" :
           \ <SID>check_back_space() ? "\<TAB>" :
