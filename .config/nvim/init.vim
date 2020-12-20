@@ -56,7 +56,6 @@ set hlsearch
 
 set timeout timeoutlen=3000 ttimeoutlen=100
 
-noremap <Esc><Esc> :noh<CR>
 noremap ; :
 noremap : ;
 
