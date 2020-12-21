@@ -72,7 +72,7 @@ nnoremap sK <C-w>K
 nnoremap sL <C-w>L
 nnoremap sH <C-w>H
 
-nnoremap st :<C-u>tabnew<CR>
+nnoremap sc :<C-u>tabnew<CR>
 nnoremap sn gt
 nnoremap sp gT
 
