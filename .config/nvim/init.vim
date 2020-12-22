@@ -24,6 +24,7 @@ set hidden
 set showcmd
 
 " color schema    
+autocmd ColorScheme * highlight LineNr ctermfg=255
 colorscheme hybrid    
 
 highlight Normal ctermbg=NONE guibg=NONE
