@@ -31,9 +31,13 @@ hook_add = '''
  
 [[plugins]] 
 repo =  'preservim/nerdtree' 
+
+[[plugins]]
+repo = 'jistr/vim-nerdtree-tabs'
 hook_add = ''' 
-    nnoremap <Leader>n :NERDTreeToggle<CR> 
+    nmap <Leader>n <plug>NERDTreeTabsToggle<CR>
 '''
+
 [[plugins]]
 repo = 'itchyny/lightline.vim' 
 hook_add = ''' 
