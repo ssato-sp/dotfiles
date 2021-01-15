@@ -77,6 +77,6 @@ nnoremap sn gt
 nnoremap sp gT
 
 " terminal
-nnoremap <Leader>t :<C-u>sp<CR><C-w>j :term<CR>
+nnoremap <Leader>t :split<CR> :term<CR>
 tnoremap <C-[> : <C-\><C-n>
 
