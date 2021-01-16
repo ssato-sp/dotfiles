@@ -76,7 +76,3 @@ nnoremap sc :<C-u>tabnew<CR>
 nnoremap sn gt
 nnoremap sp gT
 
-" terminal
-nnoremap <Leader>t :split<CR> :term<CR>
-tnoremap <C-[> : <C-\><C-n>
-

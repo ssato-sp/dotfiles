@@ -69,3 +69,11 @@ hook_add = '''
 
 [[plugins]]
 repo = 'Shougo/context_filetype.vim'
+
+[[plugins]]
+repo = 'vimlab/split-term.vim'
+hook_add = '''
+    set splitbelow
+    nnoremap <Leader>t :Term<CR>
+    tnoremap <C-[> : <C-\><C-n>
+'''
