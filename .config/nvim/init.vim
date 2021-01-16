@@ -56,8 +56,8 @@ set hlsearch
 
 set timeout timeoutlen=3000 ttimeoutlen=100
 
-noremap ; :
-noremap : ;
+nnoremap ; :
+nnoremap : ;
 
 nnoremap ss :<C-u>sp<CR>
 nnoremap sv :<C-u>vs<CR>
