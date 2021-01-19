@@ -36,6 +36,7 @@ repo =  'preservim/nerdtree'
 repo = 'jistr/vim-nerdtree-tabs'
 hook_add = ''' 
     nmap <Leader>n <plug>NERDTreeTabsToggle<CR>
+    let g:nerdtree_tabs_open_on_console_startup = 1
 '''
 
 [[plugins]]
