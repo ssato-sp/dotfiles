@@ -76,3 +76,4 @@ nnoremap sc :<C-u>tabnew<CR>
 nnoremap sn gt
 nnoremap sp gT
 
+nnoremap <Leader>z :noh<CR>
