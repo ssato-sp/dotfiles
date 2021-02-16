@@ -48,3 +48,7 @@ sudo apt autoremove -y
 
 echo "Please uninstall zsh yourself"
 echo ">sudo apt remove zsh"
+
+## uninstall Rust
+
+rustup self uninstall

@@ -81,4 +81,8 @@ echo "Please check DOTFILES_ROOT at .zshrc and g:python3_host_prog at .config/nv
 echo "DOTFILES=${dotfiles_root}"
 echo "g:python3_host_prog=${pyenv_root}/versions/python3_neovim/bin/python"
 
+## Rust
+
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+
 zsh

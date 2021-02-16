@@ -20,6 +20,7 @@
   - pyenv-update
 - neovim
 - rbenv
+- Rust
 
 `~/this_dotfiles/.bin/install_*.sh`
 
