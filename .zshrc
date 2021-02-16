@@ -68,3 +68,6 @@ eval "$(pyenv virtualenv-init -)"
 # rbenv
 export PATH="$RBENV_ROOT/bin:$PATH"
 eval "$(rbenv init -)"
+
+# Rust
+export RUST_BACKTRACE=1
