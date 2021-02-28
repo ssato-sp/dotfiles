@@ -41,6 +41,7 @@ sudo rm -rf "${dotfiles_root}/.ruby/.rbenv"
 ## uninstall required things
 
 sudo apt remove -y clang
+sudo apt rmeove -y curl
 
 ## uninstall remaining file
 
