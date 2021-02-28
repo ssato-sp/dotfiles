@@ -71,3 +71,4 @@ eval "$(rbenv init -)"
 
 # Rust
 export RUST_BACKTRACE=1
+
