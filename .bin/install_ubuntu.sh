@@ -13,6 +13,7 @@ sudo apt upgrade -y
 ## install required things
 
 sudo apt install -y clang
+sudo apt install -y curl
 
 ## install zsh
 
