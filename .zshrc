@@ -72,3 +72,7 @@ eval "$(rbenv init -)"
 
 # Rust
 export RUST_BACKTRACE=1
+
+
+# Local setting
+[ -f "$DOTFILES_ROOT/Local/.zshrc.local" ] && source "$DOTFILES_ROOT/Local/.zshrc.local"
