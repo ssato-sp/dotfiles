@@ -1,13 +1,17 @@
 *
 
-!.bin/
-!.bin/*
-!nvim/
-!nvim/*
-!Local/
+!/.bin/
+!/.bin/*
+!/nvim/
+!/nvim/*
+!/nvim/dein/
+!/nvim/dein/*
+!/nvim/dein/toml
+!/nvim/dein/toml/*
+!/Local/
 
-!.zshrc
-!.tmux.conf
-!.gitignore
-!LICENSE
-!README.md
+!/.zshrc
+!/.tmux.conf
+!/.gitignore
+!/LICENSE
+!/README.md
