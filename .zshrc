@@ -1,7 +1,7 @@
 export DOTFILES_ROOT="$HOME/dotfiles"
 export PYENV_ROOT="$DOTFILES_ROOT/.python/.pyenv"
 export RBENV_ROOT="$DOTFILES_ROOT/.ruby/.rbenv"
-export XDG_CONFIG_HOME="$DOTFILES_ROOT/.config"
+export XDG_CONFIG_HOME="$DOTFILES_ROOT"
 export XDG_CACHE_HOME="$DOTFILES_ROOT/.cache"                   
 export XDG_DATA_HOME="$DOTFILES_ROOT/.data"
 
