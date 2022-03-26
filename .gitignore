@@ -9,6 +9,7 @@
 !/nvim/dein/toml
 !/nvim/dein/toml/*
 !/Local/
+!/Local/.gitkeep
 
 !/.zshrc
 !/.tmux.conf
