@@ -1,4 +1,9 @@
 
+" reset augroup
+augroup MyAutoCmd
+  autocmd!
+augroup END
+
 let g:python3_host_prog = expand('$HOME/dotfiles/.python/.pyenv/versions/python3_neovim/bin/python')
 let $CONFIG = $XDG_CONFIG_HOME
 let $CACHE  = $XDG_CACHE_HOME
@@ -25,7 +30,6 @@ set showcmd
 
 " color schema    
 autocmd ColorScheme * highlight LineNr ctermfg=255
-colorscheme hybrid    
 
 highlight Normal ctermbg=NONE guibg=NONE
 highlight NonText ctermbg=NONE guibg=NONE
