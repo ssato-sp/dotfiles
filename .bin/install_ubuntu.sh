@@ -53,6 +53,7 @@ fi
 
 ## neovim
 
+sudo apt-add-repository ppa:neovim-ppa/stable
 sudo apt install -y neovim
 
 ## rbenv
