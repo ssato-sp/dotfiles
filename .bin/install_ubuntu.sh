@@ -15,16 +15,6 @@ sudo apt upgrade -y
 sudo apt install -y clang
 sudo apt install -y curl
 
-## install zsh
-
-sudo apt install -y zsh
-
-if [ $(echo $SHELL) !=  "zsh"]; then
-    chsh -s $(which zsh)
-fi
-
-ln -s ~/dotfiles/.zshrc ~/.zshrc
-
 ### install peco
 
 sudo apt install -y peco
@@ -82,6 +72,12 @@ sudo apt autoremove -y
 echo "Please check DOTFILES_ROOT at .zshrc and g:python3_host_prog at .config/nvim/init.vim"
 echo "DOTFILES=${dotfiles_root}"
 echo "g:python3_host_prog=${pyenv_root}/versions/python3_neovim/bin/python"
+
+## install zsh
+
+sudo apt install -y zsh
+chsh -s $(which zsh)
+ln -s ~/dotfiles/.zshrc ~/.zshrc
 
 ## Rust
 
