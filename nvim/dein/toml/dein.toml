@@ -28,16 +28,6 @@ hook_add = '''
     nnoremap <Leader>q :cclose<CR>:write<CR>:QuickRun -mode n<CR>
     nnoremap <Leader>, :cclose<CR>:write<CR>:QuickRun -input input.txt<CR> 
 ''' 
- 
-[[plugins]] 
-repo =  'preservim/nerdtree' 
-
-[[plugins]]
-repo = 'jistr/vim-nerdtree-tabs'
-hook_add = ''' 
-    nmap <Leader>n <plug>NERDTreeTabsToggle<CR>
-    let g:nerdtree_tabs_open_on_console_startup = 1
-'''
 
 [[plugins]]
 repo = 'itchyny/lightline.vim' 
